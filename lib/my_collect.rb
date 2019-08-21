@@ -1,7 +1,9 @@
 def my_collect(array)
   retarray = []
-  array.each do |item|
-    retarray.push(yield(item))
+  counter = 0
+  
+  while counter < array.length do
+    retarray.push(yield(array[i]))
   end
   
   retarray
