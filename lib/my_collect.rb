@@ -4,6 +4,8 @@ def my_collect(array)
   
   while counter < array.length do
     retarray.push(yield(array[counter]))
+    
+    counter += 1
   end
   
   retarray
